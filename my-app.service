@@ -5,6 +5,7 @@ Requires=docker.service
 
 [Service]
 ExecStart=docker start -a my-app
+ExecStop=/usr/bin/docker stop my-app
 Restart=on-failure
 
 [Install]
